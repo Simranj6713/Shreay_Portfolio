@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Shreya Jangid | Communication Designer
+        </title>
+        <link rel="stylesheet" type="text/css" href="../Portfolio/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="SJ LOGO.png" width="100px" height="70px"></a>
+            <ul><li><a href="#" class="active">Home</a></li>
+                <li><a href="#sec">About</a></li>
+                <li><a href="../Portfolio/Portfoliopage.html">Work</a></li>
+                <li><a href="../Portfolio/gamesdemo2.html">Games</a></li>
+                <li><a href="../Portfolio/contactdemo.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Welcome</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="col-12">
+            <div class="sec" id="sec">
+                <!-- <h2>Shreya Jangid | Communication designer</h2>
+                <div class="col-6 sec" id="sec">
+                    <p>Hello! I am <b>Shreya Jangid</b>, a visual communication designer 
+                        <br>who is interested in creating both digital and analogue graphics. 
+                        <br>I have an affinity for art and a love to tell stories through visuals. 
+                        <br> I'm a pragmatic perfectionist always seeking to grow and learn to attain good results.</p>
+                    
+                </div>
+                <div class="col-6 sec">
+                    <img class="img-fluid mx-auto d-block rounded-circle  ml-5" id="picture" src="../Portfolio/portfolio picture.jpg" 
+                width="225px" >
+                </div> -->
+                <div class="empty"></div>
+                <div class="card">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h2><b>Hello</b> I'm</h2>
+                        <h1>Shreya Jangid</h1>
+                        <h2>I'm a communication Designer</h2>
+                        <br><br>
+                        <p> Hello! I am Shreya Jangid, A visual communication designer
+                            <br> who is interested in creating both digital and analogue graphics.
+                            <br>I have an affinity for art an a love to tell stories through visuals.
+                            <br> I'm a pregmatic perfectionist always seeking to grow and <br>learn to attain good results.
+                        </p>
+                        <a href="../Portfolio/skillsdemo.html">Skills</a>
+                    </div>
+                    <img src="../Portfolio/my picture 2.0  final.png" width="45%" height="100%">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- <div class="card">
+            <div class="circle"></div>
+            <div class="content">
+                <h2>Shreya Jangid | Communication Designer</h2>
+                <br><br>
+                <p> Hello! I am Shreya Jangid, A visual communication designer
+                    <br> who is interested in creating both digital and analogue graphics.
+                    <br>I have an affinity for art an a love to tell stories through visuals.
+                    <br> I'm a pregmatic perfectionist always seeking to grow and <br>learn to attain good results.
+                </p>
+                <a href="#">Skills</a>
+            </div>
+            <img src="../Portfolio/my picture 2.0  final.png" width="45%" height="100%">
+        </div> -->
+        <div class="container">
+            <div class="col-12 PT-5 mt-5">
+                <!-- <a href="../Portfolio/contactme.html">
+                    <button type="button" class="btn btn-outline-light" style="margin-left: 45%;">CONTACT ME</button>
+        
+                </a> -->
+                
+                <br><br><br>
+                <p class="h6 text-center text-light">Shreya Jangid | Communication Designer</p>
+            </div>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value + 0.25 +'px';
+                moon.style.top = value + 0.05 +'px';
+                mountains_behind.style.top = value + 0.5 +'px';
+                text.style.marginRight = value + 0 +'px';
+                text.style.marginTop = value + 0 +'px';
+                btn.style.marginTop = value + 1.5 +'px';
+                header.style.top = value + 4 +'px';
+            })
+        </script>
+    </body>
+</html> 
